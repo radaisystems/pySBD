@@ -31,7 +31,7 @@ class Processor(object):
         self.text = self.text.replace('\n', '\r')
         li = ListItemReplacer(self.text)
         self.text = li.add_line_break()
-        self.replace_abbreviations()
+        #self.replace_abbreviations()
         self.replace_numbers()
         self.replace_continuous_punctuation()
         self.replace_periods_before_numeric_references()
